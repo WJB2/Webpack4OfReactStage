@@ -81,7 +81,7 @@ module.exports=merge(baseWebpackConfig,{
         }),
         new MiniCssExtractPlugin({//分离css
             filename:"css/[name].[chunkhash:8].css",
-            chunkFilename:"css/[id].[hash]css"
+            chunkFilename:"css/[id].[hash].css"
         })
     ]
 });
