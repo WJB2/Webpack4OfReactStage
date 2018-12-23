@@ -60,11 +60,12 @@ module.exports=merge(baseWebpackConfig,{
             warnings:false,
             errors:true,
         },
-        host:"127.0.0.1",
+        host:"0.0.0.0",
+        disableHostCheck:true,
         open:true,//开发服务器将打开浏览器
         noInfo:true,//那些显示的 webpack 包(bundle)信息」的消息将被隐藏。错误和警告仍然会显示。
         https:false,
-        hot:true,//启用webpack的模块热更新
+        hot:false,//启用webpack的模块热更新
         compress:true,//一切服务都启用gzip压缩
         progress:true,//将任务进度输出到控制台
         quiet:true,
